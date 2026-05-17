@@ -1,26 +1,26 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Cormorant_Garant, Nunito } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { BasketProvider } from "@/contexts/BasketContext";
 import config from "@/site.config";
 import "./globals.css";
 
-const inter = Inter({
+const cormorantGarant = Cormorant_Garant({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair-display",
+  variable: "--font-cormorant-garant",
   display: "swap",
   style: ["normal", "italic"],
   weight: ["400", "500", "600", "700"],
 });
 
-const title = `${config.brand.name} — ${config.brand.location} Farmers Market`;
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+  display: "swap",
+});
+
+const title = `${config.brand.name} — ${config.brand.location}`;
 
 export const metadata: Metadata = {
   title: {
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   },
   description: config.brand.description,
   keywords: [
-    "farmers market",
+    "patisserie",
+    "cakes",
     config.brand.location,
-    "local food",
-    "organic produce",
-    "artisan",
-    "farm to table",
+    "celebration cakes",
+    "artisan baking",
+    "handcrafted",
   ],
   authors: [{ name: "Veltro Ltd" }],
   creator: "Veltro Ltd",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: config.brand.description,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+        url: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200&q=80",
         width: 1200,
         height: 630,
         alt: title,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#2d6a4f",
+  themeColor: "#a82347",
   width: "device-width",
   initialScale: 1,
 };
@@ -73,7 +73,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable}`}>
+    <html
+      lang="en"
+      className={`${cormorantGarant.variable} ${nunito.variable}`}
+    >
       <body>
         <AuthProvider>
           <BasketProvider>
@@ -82,13 +85,13 @@ export default function RootLayout({
               position="bottom-center"
               toastOptions={{
                 style: {
-                  background: "#1e4d38",
+                  background: "#8a1f3d",
                   color: "#fff",
                   borderRadius: "10px",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-nunito)",
                 },
                 success: {
-                  iconTheme: { primary: "#e8a838", secondary: "#fff" },
+                  iconTheme: { primary: "#d49a30", secondary: "#fff" },
                 },
               }}
             />

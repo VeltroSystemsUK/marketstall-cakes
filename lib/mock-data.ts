@@ -50,8 +50,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "whole cake (10–12 slices)",
     stock: 20,
     images: [
-      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80",
-      "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80",
+      "/images/victoria-sponge.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs"],
@@ -74,7 +73,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "whole cake (14–16 slices)",
     stock: 15,
     images: [
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80",
+      "/images/red-velvet.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs"],
@@ -97,7 +96,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "box of 12",
     stock: 30,
     images: [
-      "https://images.unsplash.com/photo-1558326567-98ae2405596b?w=800&q=80",
+      "/images/macarons.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy", "eggs", "nuts"],
@@ -120,7 +119,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "box for 2 people",
     stock: 25,
     images: [
-      "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=800&q=80",
+      "/images/afternoon-tea.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs"],
@@ -143,7 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "loaf (8–10 slices)",
     stock: 40,
     images: [
-      "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=800&q=80",
+      "/images/victoria-sponge.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs"],
@@ -166,7 +165,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "box of 6",
     stock: 35,
     images: [
-      "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=800&q=80",
+      "/images/red-velvet.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs"],
@@ -188,7 +187,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "serves 6–8",
     stock: 10,
     images: [
-      "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
+      "/images/macarons.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs"],
@@ -210,7 +209,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "whole tart (8 slices)",
     stock: 12,
     images: [
-      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
+      "/images/afternoon-tea.jpg",
     ],
     dietary: ["vegetarian"],
     allergens: ["gluten", "dairy", "eggs", "nuts"],

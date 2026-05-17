@@ -68,7 +68,7 @@ export default function HomePage() {
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1600&q=85"
+          src="/images/hero.jpg"
           alt="Layered celebration cake with rose decoration"
           fill
           priority
@@ -190,7 +190,7 @@ export default function HomePage() {
         <section className="section-pad relative overflow-hidden bg-forest-950">
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=60"
+              src="/images/hero.jpg"
               alt=""
               fill
               className="object-cover object-center"
@@ -220,7 +220,7 @@ export default function HomePage() {
               </div>
               <div className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+                  src="/images/hero.jpg"
                   alt="Baker decorating a celebration cake in the studio"
                   fill
                   className="object-cover object-center"
@@ -354,7 +354,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-forest-800 py-24">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1600&q=60"
+            src="/images/hero.jpg"
             alt=""
             fill
             className="object-cover"

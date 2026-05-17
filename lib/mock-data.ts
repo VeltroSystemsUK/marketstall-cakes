@@ -19,9 +19,8 @@ export const MOCK_PRODUCERS: Producer[] = [
     },
     categories: ["cakes", "patisserie"],
     images: {
-      banner:
-        "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1400&q=80",
-      logo: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=200&q=80",
+      banner: "/images/hero.jpg",
+      logo: "/images/macarons.jpg",
     },
     status: "approved",
     commissionRate: 0,
@@ -271,8 +270,7 @@ export const MOCK_ORDERS: Order[] = [
         price: 4500,
         quantity: 1,
         unit: "whole cake (14–16 slices)",
-        imageUrl:
-          "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80",
+        imageUrl: "/images/hero.jpg",
       },
       {
         productId: "prod-3",
@@ -282,8 +280,7 @@ export const MOCK_ORDERS: Order[] = [
         price: 2200,
         quantity: 1,
         unit: "box of 12",
-        imageUrl:
-          "https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400&q=80",
+        imageUrl: "/images/hero.jpg",
       },
     ],
     producerIds: ["producer-1"],

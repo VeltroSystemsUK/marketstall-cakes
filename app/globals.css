@@ -2,7 +2,7 @@
 
 @theme {
   /* Populated at runtime by next/font CSS variables injected on <html> */
-  --font-display: var(--font-cormorant-garant), Georgia, serif;
+  --font-display: var(--font-eb-garamond), Georgia, serif;
   --font-sans: var(--font-nunito), system-ui, sans-serif;
 
   /* Primary — dusty rose / mauve */

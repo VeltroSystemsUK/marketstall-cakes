@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garant, Nunito } from "next/font/google";
+import { EB_Garamond, Nunito } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { BasketProvider } from "@/contexts/BasketContext";
 import config from "@/site.config";
 import "./globals.css";
 
-const cormorantGarant = Cormorant_Garant({
+const ebGaramond = EB_Garamond({
   subsets: ["latin"],
-  variable: "--font-cormorant-garant",
+  variable: "--font-eb-garamond",
   display: "swap",
   style: ["normal", "italic"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const nunito = Nunito({
@@ -73,10 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${cormorantGarant.variable} ${nunito.variable}`}
-    >
+    <html lang="en" className={`${ebGaramond.variable} ${nunito.variable}`}>
       <body>
         <AuthProvider>
           <BasketProvider>

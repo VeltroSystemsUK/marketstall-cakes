@@ -65,7 +65,11 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <section
+        className="relative flex min-h-screen items-center justify-center overflow-hidden"
+        data-demo-img="hero"
+        data-demo-img-label="Hero background"
+      >
         <Image
           src="/images/hero.jpg"
           alt="Layered celebration cake with rose decoration"
@@ -131,10 +135,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex items-end justify-between">
             <div>
-              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-harvest-600">
+              <p
+                data-demo-edit="products-eyebrow"
+                className="mb-2 text-sm font-semibold uppercase tracking-widest text-harvest-600">
                 Fresh from the kitchen
               </p>
-              <h2 className="font-display text-4xl font-bold text-gray-900">
+              <h2
+              data-demo-edit="products-heading"
+              className="font-display text-4xl font-bold text-gray-900">
                 Our signature creations
               </h2>
             </div>
@@ -148,7 +156,7 @@ export default function HomePage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {FEATURED_PRODUCTS.map((product, i) => (
               <div key={product.id} data-reveal data-reveal-delay={i * 80}>
-                <ProductCard product={product} />
+                <ProductCard product={product} demoKey={`product-${i}`} />
               </div>
             ))}
           </div>
@@ -198,7 +206,9 @@ export default function HomePage() {
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-harvest-500">
                   Our story
                 </p>
-                <h2 className="font-display mb-6 text-4xl font-bold text-white sm:text-5xl">
+                <h2
+                  data-demo-edit="story-heading"
+                  className="font-display mb-6 text-4xl font-bold text-white sm:text-5xl">
                   From kitchen table to Hockley studio.
                 </h2>
                 <p className="mb-4 text-base leading-relaxed text-forest-300">
@@ -214,7 +224,9 @@ export default function HomePage() {
                   Meet the baker <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
-              <div className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
+              <div data-demo-img="story"
+                data-demo-img-label="Story photo"
+                className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
                 <Image
                   src="/images/hero.jpg"
                   alt="Baker decorating a celebration cake in the studio"
@@ -268,10 +280,14 @@ export default function HomePage() {
                 <Truck className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-1-title"
+                  className="font-semibold text-gray-900">
                   Nottinghamshire delivery
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-1-body"
+                  className="text-sm text-gray-500">
                   Same-day delivery available for local orders. Next-day across
                   Nottinghamshire. Packaged to arrive in perfect condition.
                 </p>
@@ -282,10 +298,14 @@ export default function HomePage() {
                 <RefreshCw className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-2-title"
+                  className="font-semibold text-gray-900">
                   Made fresh to order
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-2-body"
+                  className="text-sm text-gray-500">
                   Nothing is pre-made or from stock. Every order is baked fresh
                   and dispatched within 48 hours of placing your order.
                 </p>
@@ -296,10 +316,14 @@ export default function HomePage() {
                 <ShieldCheck className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-3-title"
+                  className="font-semibold text-gray-900">
                   Real butter, real ingredients
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-3-body"
+                  className="text-sm text-gray-500">
                   No shortening, no artificial flavourings. Free-range eggs,
                   unbleached flour, and proper butter — every single time.
                 </p>
@@ -364,7 +388,9 @@ export default function HomePage() {
             className="font-display mb-4 text-4xl font-bold text-white sm:text-5xl">
             Every occasion deserves a cake worth remembering.
           </h2>
-          <p className="mb-8 text-lg text-forest-300">
+          <p
+            data-demo-edit="cta-body"
+            className="mb-8 text-lg text-forest-300">
             Handcrafted, made to order, and delivered to your door. Join over
             5,000 customers who&apos;ve made celebrations sweeter.
           </p>
